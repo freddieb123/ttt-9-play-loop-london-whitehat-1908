@@ -37,7 +37,7 @@ end
 
 # Define your play method below
 def play(board)
-  while (0..8).to_a.any? { |i| !position_taken(board, i)  }
+  while (0..8).to_a.any? { |i| !position_taken?(board, i)  }
     turn(board)
   end
 end
